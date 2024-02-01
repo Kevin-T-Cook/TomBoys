@@ -5,8 +5,14 @@ export default function SearchBar() {
     <div>
       <div>
         <input type="text" />
+        <h1>Test</h1>
       </div>
-      
+      <div>
+        <input type="text" />
+      </div>
+      <div>
+        <input type="text" />
+      </div>
     </div>
   )
 }
