@@ -1,5 +1,6 @@
 import React from 'react'
 import Calendar from './Calendar';
+import GuestSelector from './GuestSelector';
 
 export default function SearchBar() {
   return (
@@ -18,12 +19,9 @@ export default function SearchBar() {
       </div>
       <div>
         <label htmlFor="guests">Add Guests</label>
-        <select name="guests" id="guests">
-          <option value="adults">Adults</option>
-          <option value="children">Children</option>
-          <option value="pets">Pets</option>
-        </select>
+        <GuestSelector/>
       </div>
+      <button>SEARCH</button>
     </div>
   );
 }
