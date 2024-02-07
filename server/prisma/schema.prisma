@@ -13,6 +13,7 @@ model Boat {
   maxGuests String?
   halfDay   String?
   fullDay   String?
+  isAvail   Boolean
 }
 
 model Cabin {
@@ -22,10 +23,12 @@ model Cabin {
   amenities String?
   price     String?
   cabinType String?
+  isAvail   Boolean
+  pets      String?
 }
 
 model User {
-  id       Int     @id @default(autoincrement())
+  id       Int      @id @default(autoincrement())
   fName    String?
   lName    String?
   email    String?
@@ -36,6 +39,7 @@ model User {
   state    String?
   zip      String?
   suite    String?
+  Rental   Rental[]
 }
 
 model Storage {
@@ -43,4 +47,23 @@ model Storage {
   storageType String?
   unitSize    String?
   price       String?
+}
+
+model Rental {
+  id     Int     @id @default(autoincrement())
+  type   String?
+  dates  String?
+  guests String?
+  pets   String?
+  userId Int?
+  User   User?   @relation(fields: [userId], references: [id], onDelete: NoAction, onUpdate: NoAction)
+}
+
+model Campsite {
+  id           Int     @id @default(autoincrement())
+  campsiteType String?
+  ammenitie    String?
+  dayPrice     String?
+  monthPrice   String?
+  pets         String?
 }
