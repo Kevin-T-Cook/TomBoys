@@ -7,12 +7,12 @@ export default function Home() {
       <div>
         <div>
           <h1 className="text-6xl font-bold text-center mt-24">
-            Let Your Adventure Begin Here.
+            Adventure Starts Here.
           </h1>
         </div>
         <div>
           <h3 className='text-2xl font-bold text-center mt-10'>
-            Book your family vacation in our scenic Eastern Sierra resort.
+            Book your family vacation in the Eastern Sierras.
           </h3>
         </div>
       </div>
