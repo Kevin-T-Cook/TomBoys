@@ -9,7 +9,6 @@ export default function Calendar() {
 
   const handleDateClick = () => setIsOpen(!isOpen); 
 
-  // Custom input component (you can use an actual input or any element you prefer)
   const CustomInput = ({ value, onClick }) => (
     <button className="custom-input" onClick={onClick}>
       {value || 'Add Dates'}
