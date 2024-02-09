@@ -16,8 +16,8 @@ export default function GuestSelector() {
     const summaryText = `${adults} Adult${adults !== 1 ? 's' : ''}, ${children} Child${children !== 1 ? 'ren' : ''}, ${pets} Pet${pets !== 1 ? 's' : ''}`;
 
   return (
-    <div>
-        <button onClick={() => setShowDropdown(!showDropdown)}>
+    <div className="w-full">
+        <button onClick={() => setShowDropdown(!showDropdown)} className="w-full border border-gray-300 shadow-sm px-4 py-2 rounded-md text-left">
         Add guests {summaryText}
       </button>
       {showDropdown && (
