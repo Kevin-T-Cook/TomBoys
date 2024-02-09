@@ -16,17 +16,17 @@ export default function Calendar() {
   );
 
   return (
-    <div>
+    <div className='w-full'>
       <DatePicker
         selectsRange={true}
         startDate={startDate}
         endDate={endDate}
         onChange={(update) => setDateRange(update)}
-        withPortal
+        withPortal 
         open={isOpen}
         onCalendarClose={() => setIsOpen(false)}
-        onCalendarOpen={() => setIsOpen(true)}
-        customInput={<CustomInput />}
+        onCalendarOpen={() => setIsOpen(true)} 
+        customInput={<CustomInput />} // 
         shouldCloseOnSelect={false} 
       />
     </div>
