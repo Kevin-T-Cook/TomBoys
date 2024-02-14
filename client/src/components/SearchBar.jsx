@@ -6,7 +6,7 @@ import Accommodations from './Accommodations';
 export default function SearchBar() {
   return (
     <div className="flex justify-center mt-12">
-     <div className="w-1/2 flex justify-around items-center p-4 bg-white shadow rounded-lg">
+      <div className="w-3/4 flex justify-around items-center p-4 bg-white shadow rounded-lg">
         <Accommodations />
         <Calendar />
         <GuestSelector />
