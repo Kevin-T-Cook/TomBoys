@@ -5,13 +5,13 @@ import Accommodations from './Accommodations';
 
 export default function SearchBar() {
   return (
-    <div className="flex justify-center mt-12">
-     <div className="w-1/2 flex justify-around items-center p-4 bg-white shadow rounded-lg">
-        <Accommodations />
-        <Calendar />
-        <GuestSelector />
-        <button className="bg-red-500 text-white px-6 py-2 rounded hover:bg-red-600">SEARCH</button>
-      </div>
+    <div className="flex justify-center items-center p-6 bg-white shadow rounded-lg">
+      <Accommodations />
+      <Calendar />
+      <GuestSelector />
+      <button className="bg-blue-800 text-white text-lg font-bold px-8 py-4 rounded hover:bg-blue-600">
+        SEARCH
+      </button>
     </div>
   );
 }
