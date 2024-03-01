@@ -22,9 +22,17 @@ export default function Home() {
           alt="Kids in Rafts On Lake"
         />
       </div>
-      <div>
-        <img className="w-1/3 rounded-lg flex justify-center" src="src/assets/monoBoats.jpeg" alt="Long line of boats on a dock" />
-      </div>
+      <div className="pictureContainer flex justify-center space-x-4">
+  <img
+    className="w-1/3 rounded-lg object-cover h-96"
+    src="src/assets/monoBoats.jpeg"
+    alt="Long line of boats on a dock"
+  />
+  <img 
+    className="w-1/3 rounded-lg object-cover h-96" 
+    src="src/assets/KidsFishing.jpeg" 
+    alt="Two kids holding up fish" />
+</div>
     </div>
   );
 }
