@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import Home from '../pages/Home';
 
 export default function Nav() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -8,9 +9,13 @@ export default function Nav() {
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div className="flex justify-between items-center h-16">
         <div className="flex items-center">
+          <Link
+          to="/"
+          >
           <h1 className="whitespace-nowrap text-xl sm:text-2xl lg:text-3xl font-bold mr-4 sm:mr-8">
             Annett's Mono Village
           </h1>
+          </Link>
         </div>
         <div className="flex items-center">
           <button
