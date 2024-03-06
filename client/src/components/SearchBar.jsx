@@ -1,27 +1,17 @@
 import React from 'react'
 import Calendar from './Calendar';
 import GuestSelector from './GuestSelector';
+import Accommodations from './Accommodations';
 
 export default function SearchBar() {
   return (
-    <div>
-      <div>
-        <label htmlFor="accommodations">Accommodations</label>
-        <select name="accommodations" id="accommodations">
-          <option value="Cabins">Cabins</option>
-          <option value="Campsites">Campsites</option>
-          <option value="Motel">Motel</option>
-        </select>
-      </div>
-      <div>
-        <label htmlFor="calendar">Add Dates</label>
-        <Calendar/>
-      </div>
-      <div>
-        <label htmlFor="guests">Add Guests</label>
-        <GuestSelector/>
-      </div>
-      <button>SEARCH</button>
+    <div className="flex justify-center items-center p-6 bg-white shadow rounded-lg">
+      <Accommodations />
+      <Calendar />
+      <GuestSelector />
+      <button className="bg-blue-800 text-white text-lg font-bold px-8 py-4 rounded hover:bg-blue-600">
+        SEARCH
+      </button>
     </div>
   );
 }
