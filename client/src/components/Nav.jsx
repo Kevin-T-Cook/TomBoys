@@ -25,7 +25,7 @@ export default function Nav() {
         <Link to="/contactUs" className="text-gray-800 hover:text-gray-700">CONTACT US</Link>
         <div className="orderButton">
           <Link to="/order">
-            <button className="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded">
+            <button className="bg-red-600 hover:bg-red-800 text-white font-bold py-2 px-4 rounded">
               ORDER NOW
             </button>
           </Link>
